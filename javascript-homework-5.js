@@ -64,13 +64,14 @@
 
 //homework 6 ????????????????
 
-// let item = [12, 'google', 32, null, 'yahoo', 25];
+let item = [12, "google", 32, null, "yahoo", 25];
 
-// let newitem = item.map(function(element){
-//      if (typeof element == 'number')
-//     return Math.pow(item,2)
-// });
-// console.log(newitem);     ???????????????
+let newitem = item.map(function (element) {
+  if (typeof element == "number") return Math.pow(element, 2);
+  else if (typeof element == "string") return element.toUpperCase();
+  else return element;
+});
+console.log(newitem); 
 
 //homework 7
 
